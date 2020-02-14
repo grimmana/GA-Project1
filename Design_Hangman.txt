@@ -1,13 +1,54 @@
 Hangman
 
 
-Usecase1:
+Use_case1:
 - player1 enters a word to be guessed
 
 
   
-Processing tasks for Usecase1: (select-a-word or text-box-input)
+Processing tasks for Use_case1: (select-a-word or text-box-input)
+
+
+- text-box-input 
+	- text box for input
+		- optional: text-tip: e.g. "Enter a word" (any string entered is acceptable)
 	
+- button - initiates next action ---> validation (bypassed) ---> parse/split
+
+	- validation
+	
+		- input validation on word selection: not required 
+	
+
+				- optional: input validation: 
+	
+				- validation
+					- validation steps 
+						- check for numbers (not allowed) e.g.1234567890
+						- returns false: pass or returns true: fail
+						- check for special characters (not allowed)e.g. !@#$%^&*.,<>/\'";:? 
+						- returns false: pass or returns true: fail
+						- optional: is it even a real word? - API: Oxford dictionary - https://developer.oxforddictionaries.com
+						- returns false: pass or returns true: fail
+	
+					- unsuccessful validation 
+						- if input is resubmitted
+						- run validation steps again
+						- loop while or until validation is successful
+							- optional: if input is not resubmitted 
+							- optional timer?
+							- optional alert?
+							- optional reset?
+
+					- validation pass - initiates next action ---> parse/split
+
+
+	- parse/split: each character into an array
+
+	- use or don't use the array.length count as the number of letter-guess-attempts
+
+<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>
+
 - select-a-word
 	- drop down (ensures valid input) 
 		- list: by a specific word length e.g. 5
@@ -16,75 +57,36 @@ Processing tasks for Usecase1: (select-a-word or text-box-input)
 	
 	- button - initiates next action ---> validation (bypassed) ---> parse/split
 
-	- validation
-
-	- input validation on word selection: not required
+	- validation - input validation on word selection: not required
 
 	- parse/split: each character into an array
 
-	- use or don't use the array.length count as the number of letter-guess-attempt
-	
-
-
-
-- text-box-input 
-	- text box for input
-		- optional: text-tip: e.g. "Enter a word"
-	
-	- button - initiates next action ---> validation
-
-	- input validation: is required
-	
-	- validation
-		- validation steps 
-			- check for numbers (not allowed) e.g.1234567890
-				- returns false: pass or returns true: fail
-			- check for special characters (not allowed)e.g. !@#$%^&*.,<>/\'";:? 
-				- returns false: pass or returns true: fail
-			- optional: is it even a real word? - API: Oxford dictionary - https://developer.oxforddictionaries.com
-				- returns false: pass or returns true: fail
-	
-			- unsuccessful validation 
-				- if input is resubmitted
-					- run validation steps again
-					- loop while or until validation is successful
-					- optional: if input is not resubmitted 
-						- optional timer?
-						- optional alert?
-						- optional reset?
-
-			- validation pass - initiates next action ---> parse/split
-
-	- parse/split: each character into an array
-
-	- use or don't use the array.length count as the number of letter-guess-attempts
-
-
-	
-Xxxxxxxxxxxxxxxxxxxxxxxx Xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+	- use or don't use the array.length count as the number of letter-guess-attempt	
+Xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 		
 
-Usecase2. Have player2 select a letter which will be revealed if present
+Use_case2: Have player2 select a letter which will be revealed if present
 
 
-
-
-Xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-
-- player-attempts
+  
+Processing tasks for Use_case2: (Split out: reveal letter selection put in Use_case3)
 
 
 
 
 
 
-Xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+Use_case3: Reveal letter selection (Split out: from Use_case2)
 
 
 
 
-Gold:
-Enhance graphics:
+
+Xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+Enhancements:
 1. Add timer based scoring
 
 2. Track scores across games (even if the page is reloaded)
