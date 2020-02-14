@@ -1,59 +1,65 @@
 Hangman
 
-Xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 Usecase1:
 - player1 enters a word to be guessed
 
 
   
-Processing tasks:
+Processing tasks for Usecase1: (select-a-word or text-box-input)
 	
 - select-a-word
 	- drop down (ensures valid input) 
 		- list: by a specific word length e.g. 5
 			- optional: separate lists by word length e.g. 2,3,4,5
 			- optional: categories e.g. animal, plant, inanimate
-			
-	- input validation: not required
 	
-	- button
-		- initiates next action
-	- insert into an array and parse by character
-	- get array.length count
-	- array.length count equals the number of letter-guess-attempts
+	- button - initiates next action ---> validation (bypassed) ---> parse/split
+
+	- validation
+
+	- input validation on word selection: not required
+
+	- parse/split: each character into an array
+
+	- use or don't use the array.length count as the number of letter-guess-attempt
+	
+
 
 
 - text-box-input 
-	- text-tip: e.g. "Enter a 'five' character word"
+	- text box for input
+		- optional: text-tip: e.g. "Enter a word"
+	
+	- button - initiates next action ---> validation
 
 	- input validation: is required
 	
-	- validation steps 
-		- numbers or special characters are not allowed
-		- number of characters
-		- is it a real word?
- 			- API: Oxford dictionary - https://developer.oxforddictionaries.com
+	- validation
+		- validation steps 
+			- check for numbers (not allowed) e.g.1234567890
+				- returns false: pass or returns true: fail
+			- check for special characters (not allowed)e.g. !@#$%^&*.,<>/\'";:? 
+				- returns false: pass or returns true: fail
+			- optional: is it even a real word? - API: Oxford dictionary - https://developer.oxforddictionaries.com
+				- returns false: pass or returns true: fail
 	
-	- unsuccessful validation - alert
+			- unsuccessful validation 
+				- if input is resubmitted
+					- run validation steps again
+					- loop while or until validation is successful
+					- optional: if input is not resubmitted 
+						- optional timer?
+						- optional alert?
+						- optional reset?
 
-	
-- button-initiate
-	- gets the data from the Text-box
+			- validation pass - initiates next action ---> parse/split
+
+	- parse/split: each character into an array
+
+	- use or don't use the array.length count as the number of letter-guess-attempts
 
 
-	- unsuccessful validation - alert
-	- validation - successful
-		- confirmation
-		- initiate word parse
-
-- parse the content 
-	- puts each letter in an variable: array
-	- use array.length to establish the number of guess-attempts
-
--
-
- enter button
 	
 Xxxxxxxxxxxxxxxxxxxxxxxx Xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 		
@@ -65,7 +71,7 @@ Usecase2. Have player2 select a letter which will be revealed if present
 
 Xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
-
+- player-attempts
 
 
 
