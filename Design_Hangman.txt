@@ -1,0 +1,84 @@
+Hangman
+
+Xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+Usecase1:
+- player1 enters a word to be guessed
+
+
+  
+Processing tasks:
+	
+- select-a-word
+	- drop down (ensures valid input) 
+		- list: by a specific word length e.g. 5
+			- optional: separate lists by word length e.g. 2,3,4,5
+			- optional: categories e.g. animal, plant, inanimate
+			
+	- input validation: not required
+	
+	- button
+		- initiates next action
+	- insert into an array and parse by character
+	- get array.length count
+	- array.length count equals the number of letter-guess-attempts
+
+
+- text-box-input 
+	- text-tip: e.g. "Enter a 'five' character word"
+
+	- input validation: is required
+	
+	- validation steps 
+		- numbers or special characters are not allowed
+		- number of characters
+		- is it a real word?
+ 			- API: Oxford dictionary - https://developer.oxforddictionaries.com
+	
+	- unsuccessful validation - alert
+
+	
+- button-initiate
+	- gets the data from the Text-box
+
+
+	- unsuccessful validation - alert
+	- validation - successful
+		- confirmation
+		- initiate word parse
+
+- parse the content 
+	- puts each letter in an variable: array
+	- use array.length to establish the number of guess-attempts
+
+-
+
+ enter button
+	
+Xxxxxxxxxxxxxxxxxxxxxxxx Xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+		
+
+Usecase2. Have player2 select a letter which will be revealed if present
+
+
+
+
+Xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+
+
+
+
+
+
+
+Xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+
+
+
+Gold:
+Enhance graphics:
+1. Add timer based scoring
+
+2. Track scores across games (even if the page is reloaded)
