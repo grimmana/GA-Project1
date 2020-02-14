@@ -6,7 +6,7 @@ Use_case1:
 
 
   
-Processing tasks for Use_case1: (select-a-word or text-box-input)
+Processing tasks for Use_case1: (text-box-input or select-a-word )
 
 
 - text-box-input 
@@ -25,20 +25,20 @@ Processing tasks for Use_case1: (select-a-word or text-box-input)
 				- validation
 					- validation steps 
 						- check for numbers (not allowed) e.g.1234567890
-						- returns false: pass or returns true: fail
+							- returns false: pass or returns true: fail
 						- check for special characters (not allowed)e.g. !@#$%^&*.,<>/\'";:? 
-						- returns false: pass or returns true: fail
+							- returns false: pass or returns true: fail
 						- optional: is it even a real word? - API: Oxford dictionary - https://developer.oxforddictionaries.com
-						- returns false: pass or returns true: fail
+							- returns false: pass or returns true: fail
 	
 					- unsuccessful validation 
 						- if input is resubmitted
 						- run validation steps again
 						- loop while or until validation is successful
 							- optional: if input is not resubmitted 
-							- optional timer?
-							- optional alert?
-							- optional reset?
+							- optional: timer?
+							- optional: alert?
+							- optional: reset?
 
 					- validation pass - initiates next action ---> parse/split
 
@@ -48,7 +48,7 @@ Processing tasks for Use_case1: (select-a-word or text-box-input)
 	- use or don't use the array.length count as the number of letter-guess-attempts
 
 <<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>
-
+Optional:
 - select-a-word
 	- drop down (ensures valid input) 
 		- list: by a specific word length e.g. 5
@@ -69,7 +69,7 @@ Use_case2: Have player2 select a letter which will be revealed if present
 
 
   
-Processing tasks for Use_case2: (Split out: reveal letter selection put in Use_case3)
+Processing tasks for Use_case2: (Split out: reveal letter selection; put in Use_case3)
 
 - select_a_character
 
