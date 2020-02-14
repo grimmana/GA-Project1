@@ -71,6 +71,7 @@ Use_case2: Have player2 select a letter which will be revealed if present
   
 Processing tasks for Use_case2: (Split out: reveal letter selection put in Use_case3)
 
+- select_a_character
 
 
 
