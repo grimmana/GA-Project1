@@ -73,6 +73,11 @@ Processing tasks for Use_case2: (Split out: reveal letter selection; put in Use_
 
 - select_a_character
 
+- text-box-input 
+	- text box for input
+		- optional: text-tip: e.g. "Enter a word" (any string entered is acceptable)
+	
+- button - initiates next action ---> validation (bypassed) ---> parse/split
 
 
 
