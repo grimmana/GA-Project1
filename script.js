@@ -1,12 +1,12 @@
 let wordSize = 20; //maximum word length
 console.log(wordSize)
-let word = document.getElementById('p1button').value;
-console.log(document.getElementById('p1button').value);
+let word = document.getElementById("p1word").value.split("");
+console.log(document.getElementById("p1word").value.split(""));
 
 document.addEventListener('submit', (event) => {
     event.preventDefault();
-    let wordArray = word.split(""); 
-    console.log(wordArray)
+    let word = document.getElementById("p1word").value.split("");
+    console.log(document.getElementById("p1word").value.split(""));
 })
 // Split the text entry word into an array
 //document.addEventListener('submit', (event) => {
