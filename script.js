@@ -1,16 +1,13 @@
 let wordSize = 20; //maximum word length
 console.log(wordSize)
-let word = document.getElementById("p1word").value.split("");
-console.log(document.getElementById("p1word").value.split(""));
 
 document.addEventListener('submit', (event) => {
     event.preventDefault();
+// split the player1 text field value    
     let word = document.getElementById("p1word").value.split("");
     console.log(word);
 // reset the word input field    
     document.getElementById("p1word").value = "";
-    
-
 })
 // Split the text entry word into an array
 //document.addEventListener('submit', (event) => {
@@ -25,10 +22,10 @@ document.addEventListener('submit', (event) => {
 // Check the guess value
 document.addEventListener('submit', (event) => {
     event.preventDefault();
-    let guessletter = document.querySelector("p2letter").value;
-    console.log(guessletter);
-// reset the guess letter field    
-    document.getElementById("p1word").value = "";
+    let guess = document.getElementById("p2letter").value;
+    console.log(guess);
+// Reset the guess letter field    
+    document.getElementById("p2letter").value = "";
 
 })
 
