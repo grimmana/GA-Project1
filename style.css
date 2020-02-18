@@ -11,43 +11,16 @@ h1{
     font-size: 50px;
     margin: 0;
 }  
-#textarea{
-    color: green;
-    padding: 2px 2px;
-    font-family: "Raleway", sans-serif;
-    letter-spacing: 1px;
-    font-weight: 10;
-    font-size: 20px;
-    margin: 0;
-}
-div{
+h2{
     color: black;
     padding: 2px 2px;
     font-family: "Raleway", sans-serif;
     letter-spacing: 1px;
     font-weight: 10;
     font-size: 30px;
+    width: 5;
     margin: 0;
     align-content: center;
-}
-
-#p1word {
-    color: black;
-    padding: 2px 4px;
-    font-family: "Raleway", sans-serif;
-    letter-spacing: 1px;
-    font-weight: 10;
-    font-size: 14px;
-    margin: 0;
-}
-#p2word {
-    color: black;
-    padding: 2px 4px;
-    font-family: "Raleway", sans-serif;
-    letter-spacing: 1px;
-    font-weight: 10;
-    font-size: 14px;
-    margin: 0; 
 }
 ::placeholder {
     color:purple;
