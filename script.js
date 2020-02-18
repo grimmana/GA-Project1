@@ -7,6 +7,9 @@ document.addEventListener('submit', (event) => {
     event.preventDefault();
     let word = document.getElementById("p1word").value.split("");
     console.log(document.getElementById("p1word").value.split(""));
+    document.getElementById("p1word").value = "";
+    console.log(document.getElementById("p1word").value);
+
 })
 // Split the text entry word into an array
 //document.addEventListener('submit', (event) => {
