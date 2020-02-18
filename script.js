@@ -1,7 +1,7 @@
 let wordSize = 20; //maximum word length
 console.log(wordSize)
-let word = document.getElementById('p1word').value;
-console.log(document.getElementById('p1word').value);
+let word = document.getElementById('p1button').value;
+console.log(document.getElementById('p1button').value);
 
 document.addEventListener('submit', (event) => {
     event.preventDefault();
