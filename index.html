@@ -9,7 +9,7 @@
 <body>
 <h1>WORD-GUESS (a.k.a. Hangman)</h1>
     <h2>
-    <label for="player1">Player 1:</label>
+    <label for="p1word">Player 1:</label>
     </h2>
 <form id="form1">
         <div>
@@ -18,11 +18,8 @@
         <div>
         <input type="submit" name="p1button" id="p1button" value="Save"/>
         </div>
-    <h2>
-    <div class="square"></div>
-    </h2>
-    <h2>
-        <label for="player2">Player 2: </label>
+        <h2>
+        <label for="p2letter">Player 2: </label>
     </h2>
         <div>
         <textarea name = "letterChoice" id = "p2letter" placeholder = "Enter 1 letter" ></textarea>
@@ -30,9 +27,9 @@
         <div>
         <input type="submit" name="p2button" id="p2button" value="Save"/> 
         </div>
-</form>
+    </form>
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>
 
 
