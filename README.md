@@ -1,6 +1,16 @@
 # GA-Project1
 GA Project #1: Build a Game with HTML, CSS and JavaScript
+Technical Requirements
+Your game must:
 
+- Render in the browser
+- Include separate HTML / CSS / JavaScript files
+- Use Javascript for DOM manipulation
+- Be deployed online, using Github Project pages and/or to a custom domain.
+- Use semantic markup for HTML and CSS (adhere to best practices)
+- Show a good commit history with frequent commits
+- Additionally, your project should stick with KISS (Keep It Stupid Simple) and DRY (Don't - Repeat Yourself) principles.
+++++++++++++++++++=
 Necessary Deliverables
 Your submission must include all of the following:
 
@@ -13,12 +23,13 @@ Your submission must include all of the following:
 6. Explanations of the technologies used, the approach taken, installation instructions, unsolved problems, etc.
 
 
-AUDIENCE:
 
+AUDIENCE:
+Peers
 
 
 PROJECT PURPOSE:
-
+Apply learned skills in HTML / CSS / JavaScript along with 
 
 
 CODE EXAMPLE:
@@ -26,7 +37,7 @@ CODE EXAMPLE:
 
 
 LINK TO CODE/ISSUE TRACKER:
-
+none
 
 
 FREQUENTLY ASKED QUESTIONS (FAQ):
@@ -42,10 +53,10 @@ STANDARDS (CONTRIBUTORS):
 
 
 INSTALLATION INSTRUCTIONS:
-
+none
 
 
 PROJECT LICENSE:
-
+none
 
 
