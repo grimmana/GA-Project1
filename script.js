@@ -1,6 +1,13 @@
 
+let guess1 = [];
+let guess2 = [];
+let guess3 = [];
+let guess4 = [];
+let guess5 = [];
+
 let letter = [];
 let word = [];
+
 function player1() {
         document.getElementById("form1").addEventListener('submit', (event) => {
         event.preventDefault();
@@ -11,7 +18,8 @@ function player1() {
                 console.log(word[i]);
        // document.getElementById("p1word").value = " ";  
     //alert("Word is" + " " + (word.length) + " " + "characters");
-    }});
+    }
+});
 }
 player1();
 
@@ -25,17 +33,16 @@ function player2() {
                 console.log(letter[i]);
         //alert("Letter selected has" + " " + (letter.length) + " " + "characters");
       //  document.getElementById("p2word").value = " ";  
-    }});
+    }
+});
 }
 player2();
 
-for(let i=0; i<=word.length; i++){
-        word[i] + "<br>";
-}
+// for(let i=0; i<=word.length; i++){
+//         word[i] + "<br>";
+// }
 
-letter.filter(function(n) {
-        console.log( word.indexOf(n) !== -1);
-    });
+
     
 
 
