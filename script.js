@@ -1,21 +1,42 @@
-let wordArray = [];
-let letterArray = [];
-// player 1
-document.addEventListener('submit', (event) => {
-    event.preventDefault();  
-let word = document.getElementById("p1word").value.split("");
-wordArray.push(word);
-//document.getElementById("p1word").value = "";  //clear field
-//console.log(wordArray);
-});
-// player 2
-document.addEventListener('submit', (event) => {
-    event.preventDefault();
-let letter = document.getElementById("p2letter").value;
-letterArray.push(letter); 
-//document.getElementById("p2letter").value = "";  //clear field
-//console.log(letterArray);
-//letterArray.shift();
-});
+
+let letter = [];
+let word = [];
+function player1() {
+        document.getElementById("form1").addEventListener('submit', (event) => {
+        event.preventDefault();
+        let word = document.getElementById("p1word").value.split("");
+        console.log(word);
+        for(let i=0; i<=word.length; i++){
+                word[i] + "<br>";
+                console.log(word[i]);
+       // document.getElementById("p1word").value = " ";  
+    //alert("Word is" + " " + (word.length) + " " + "characters");
+    }});
+}
+player1();
+
+function player2() {
+        document.getElementById("form2").addEventListener('submit', (event) => {
+        event.preventDefault();
+        let letter = document.getElementById("p2letter").value.split("");
+        console.log(letter);
+        for(let i=0; i<=letter.length; i++){
+                letter[i] + "<br>";
+                console.log(letter[i]);
+        //alert("Letter selected has" + " " + (letter.length) + " " + "characters");
+      //  document.getElementById("p2word").value = " ";  
+    }});
+}
+player2();
+
+for(let i=0; i<=word.length; i++){
+        word[i] + "<br>";
+}
+
+letter.filter(function(n) {
+        console.log( word.indexOf(n) !== -1);
+    });
+    
+
 
 
