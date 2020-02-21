@@ -1,7 +1,7 @@
 
 //Input entry player 1
 
-function player1(reset) {
+function player1() {
         document.getElementById("form1").addEventListener('submit', (event) => {
         event.preventDefault();
         let word = document.getElementById("p1word").value.split("");
@@ -31,6 +31,6 @@ function player2(checkGuess) {
 player2();
 
 function checkGuess(letter,word){
-        
+
 }
 
