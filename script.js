@@ -1,36 +1,52 @@
 
-//Input entry player 1
+//variables
+let word = [];
+let letter = [];
+let exists = letter.some(letter => word.includes(letter));
 
+
+
+
+
+//Input entry player 1
 function player1() {
-        document.getElementById("form1").addEventListener('submit', (event) => {
-        event.preventDefault();
-        let word = document.getElementById("p1word").value.split("");
-        console.log(word);
-        document.getElementById("p1word").value = " ";  
+   document.getElementById("form1").addEventListener('submit', (event) => {
+   event.preventDefault();
+   let word = document.getElementById("p1word").value.split("");
+   console.log(word);
+   document.getElementById("p1word").value = " ";  
 });
 }
 player1();
-function reset(){
-        document.getElementById("p1word").value = "";  
-      }
-reset();
-
-let word = [];
-let letter = [];
 
 
 //Input entry player 2
-function player2(checkGuess) {
-        document.getElementById("form2").addEventListener('submit', (event) => {
-        event.preventDefault();
-        let letter = document.getElementById("p2letter").value.split("");
-        console.log(letter);
-        document.getElementById("p2letter").value = " ";  
-   } );}
+function player2() {
+   document.getElementById("form2").addEventListener('submit', (event) => {
+   event.preventDefault();
+   let letter = document.getElementById("p2letter").value.split("");
+   console.log(letter);
+  document.getElementById("p2letter").value = " "; 
+   let exists = letter.some(letter => word.includes(letter));  
+   if (exists === true) {
+  console.log("true");
+} else { 
+  console.log("false");
+   }
 
-player2();
-
-function checkGuess(letter,word){
-
+// count
+i = 0
+while (i < 3) {
+console.log( "guess #") + i ;
+   i++;
 }
+});}
+
+
+
+
+
+
+
+
 
