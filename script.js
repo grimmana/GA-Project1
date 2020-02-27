@@ -3,44 +3,41 @@
 let word = [];
 let letter = [];
 let exists = letter.some(letter => word.includes(letter));
-
-
-
-
+let score = 0
+let failure = 0
 
 //Input entry player 1
 function player1() {
    document.getElementById("form1").addEventListener('submit', (event) => {
    event.preventDefault();
-   let word = document.getElementById("p1word").value.split("");
+   word = document.getElementById("p1word").value.split("");
    console.log(word);
-   document.getElementById("p1word").value = " ";  
+   document.getElementById("p1word").value =" ";  
 });
 }
 player1();
 
+document.getElementById("form2").addEventListener('submit',
+(event) => player2(event));
+ 
 
 //Input entry player 2
-function player2() {
-   document.getElementById("form2").addEventListener('submit', (event) => {
+function player2(event) {
    event.preventDefault();
-   let letter = document.getElementById("p2letter").value.split("");
+   letter = document.getElementById("p2letter").value;
+  document.getElementById("p2letter").value =""; 
+   let exists = word.includes(letter); 
+   console.log(exists); 
+   console.log(score);
    console.log(letter);
-  document.getElementById("p2letter").value = " "; 
-   let exists = letter.some(letter => word.includes(letter));  
    if (exists === true) {
-  console.log("true");
+score++
 } else { 
-  console.log("false");
+failure++
    }
-
-// count
-i = 0
-while (i < 3) {
-console.log( "guess #") + i ;
-   i++;
-}
-});}
+if(score >= word.length) alert("YOU WON")
+if(failure >= 6) alert("YOU LOST, sorry")
+;}
 
 
 
